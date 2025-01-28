@@ -21,8 +21,7 @@ class LoadPromptFromTXT:
     OUTPUT_NODE = True
     CATEGORY = "utils"
 
- # Set IS_CHANGED to True to ensure the node is always considered dirty
-    IS_CHANGED = True
+
     
     def natural_sort_key(self, s):
         """
