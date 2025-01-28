@@ -23,6 +23,9 @@ class IntervalCounterB:
     FUNCTION = "counter"
     CATEGORY = "Custom Nodes/Counters"
 
+ # Set IS_CHANGED to True to ensure the node is always considered dirty
+    IS_CHANGED = True
+    
     def __init__(self):
         self.load_state()
 
