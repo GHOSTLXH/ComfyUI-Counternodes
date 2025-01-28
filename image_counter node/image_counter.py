@@ -27,6 +27,9 @@ class ImageCounter:
     OUTPUT_NODE = True
     CATEGORY = "image"
 
+ # Set IS_CHANGED to True to ensure the node is always considered dirty
+    IS_CHANGED = True
+    
     def count_image(self, image, reset, increment, trigger_interval, trigger=None):
         print(f"Before: count={self.count}, _current_interval_count={self._current_interval_count}, trigger_interval={trigger_interval}, reset={reset}")
         if reset:
