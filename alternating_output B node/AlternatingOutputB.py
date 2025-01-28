@@ -36,6 +36,9 @@ class AlternatingOutputB:
     FUNCTION = "alternate"
     CATEGORY = "Utils"
 
+ # Set IS_CHANGED to True to ensure the node is always considered dirty
+    IS_CHANGED = True
+    
     def alternate(self, input_a, input_b, n, first_output, counter):
         # 检查和处理 input_a
         if torch.is_tensor(input_a) and input_a.ndim == 4:
