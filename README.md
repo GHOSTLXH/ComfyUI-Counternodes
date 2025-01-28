@@ -7,14 +7,14 @@ Usage: Copy all six node folders mentioned above and paste them into the ComfyUI
 
 节点功能与示意工作流：
 
-1：
+1：IntervalCounter A node
 
-2：
+2：IntervalCounter B node
 
-3：
+3：alternating_output A node
 
-4：
+4：alternating_output B node
 
-5：
+5：image_counter node
 
-6：
+6：load_prompt_txt node
