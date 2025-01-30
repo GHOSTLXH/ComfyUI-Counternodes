@@ -8,6 +8,7 @@ Usage: Copy all six node folders mentioned above and paste them into the ComfyUI
 节点功能与示意工作流：
 
 1：IntervalCounter A node
+![IntervalCounter A node](image/微信截图_20250130155139.png)
 
 2：image_counter node
 
