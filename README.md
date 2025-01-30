@@ -9,7 +9,7 @@ Usage: Copy all six node folders mentioned above and paste them into the ComfyUI
 
 1：IntervalCounter A node
 
-![IntervalCounter A node](image/微信截图_20250130155139.png)
+![IntervalCounter A node](image/IntervalCounterA.png)
 
 2：image_counter node
 
