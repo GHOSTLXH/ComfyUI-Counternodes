@@ -9,12 +9,14 @@ Usage: Copy all six node folders mentioned above and paste them into the ComfyUI
 
 1：IntervalCounter A node
 
-2：IntervalCounter B node
+2：image_counter node
 
-3：alternating_output A node
+3：load_prompt_txt node
 
-4：alternating_output B node
+4：IntervalCounter B node
 
-5：image_counter node
+5：alternating_output A node
 
-6：load_prompt_txt node
+6：alternating_output B node
+
+
