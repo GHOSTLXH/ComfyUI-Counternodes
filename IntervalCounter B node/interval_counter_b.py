@@ -15,7 +15,7 @@ class IntervalCounterB:
                 "step": ("INT", {"default": 1, "min": 1, "max": 10000}),
                 "trigger_interval": ("INT", {"default": 3, "min": 1, "max": 10000}),
                 "tick": ("INT", {"default": 0, "min": 0, "max": 999999}),
-                "expression": ("STRING", {"default": "value + 1"}),  # New input for the mathematical expression
+                "expression": ("STRING", {"default": "value + 1"}),
             },
         }
 
@@ -27,6 +27,9 @@ class IntervalCounterB:
         self.load_state()
 
     def counter(self, reset, mode, min_value, max_value, step, trigger_interval, tick, expression):
+        # 确保trigger_interval是整数
+        trigger_interval = int(trigger_interval)
+        
         print(f"Before: _current_interval_count={self._current_interval_count}, trigger_interval={trigger_interval}, mode={mode}, value={self.value}, reset={reset}, tick={tick}")
         if reset:
             self.reset_state(min_value)
@@ -54,7 +57,6 @@ class IntervalCounterB:
                         self.value = max(min(self.value, max_value), min_value)  # Clamp the value
                     except Exception as e:
                         print(f"Error evaluating expression: {e}")
-        print(f"After: _current_interval_count={self._current_interval_count}, trigger_interval={trigger_interval}, mode={mode}, value={self.value}")
         self.save_state()
         return (int(self.value),)
 
