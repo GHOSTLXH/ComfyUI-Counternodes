@@ -200,7 +200,7 @@ The value of the external counter node.
 
 6：alternating_output B node（常用）
 
-此节点与alternating_output A相似，但此节点的顺序为：每个循环的第一轮输出由first_output决定，后面在first_output的后n-1轮输出与first_output相同的图片，最后在first_output的后n轮输出与first_output相反的图片，以此为一个循环，然后以此往复。（e：当n=3，first_output=input_b时，前10轮的图片输出顺序为：BBBABBBABB）（注：此节点的first_output参与循环！）
+此节点与alternating_output A相似，但此节点的顺序为：每个循环的第一轮输出由first_output决定，后面在first_output的后n-1轮输出与first_output相同的图片，最后在first_output的后n轮输出与first_output相反的图片，以此为一个循环，然后以此往复。（e：当n=3，first_output=input_b时，前10轮的图片输出顺序为：BBBABBBABB）（注：此节点的first_output参与循环！在例中条件下，每个循环应为BBBA，即第一个循环的第一个输出值由first_output决定，并由此决定第一个循环的结构，从而奠定后续循环的结构）
 
 This node is similar to alternating_output A, but the order of this node is as follows: the output of the first round of each cycle is determined by first_output. In the subsequent n - 1 rounds after first_output, the same picture as first_output is output. Finally, in the n rounds after first_output, the picture opposite to first_output is output. This constitutes one cycle, and then this pattern repeats. (e: When n = 3 and first_output = input_b, the output order of pictures in the first 10 rounds is: BBBABBBABB) (Note: Under the example conditions in the sentence, each cycle should be BBBA, that is, the first output value of the first cycle is determined by first_output, and the structure of the first cycle is determined accordingly, thus laying the foundation for the structure of subsequent cycles. Indeed, the first_output of this node participates in the cycle.)
 
