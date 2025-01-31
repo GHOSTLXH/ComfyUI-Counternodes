@@ -49,7 +49,12 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 
 5：alternating_output A node
 
-![Alternating Output A node](image/AlternatingOutputA.png)
+![Alternating Output A node](image/AlternatingOutputA.png) 
+
+示例工作流（非重置模式） workflow example（unreset mode）
+
+![workflow example1（nodes 4 unreset mode）](image/example4.png)
+
 
 6：alternating_output B node（常用）
 ![Alternating Output B node](image/AlternatingOutputB.png)
