@@ -11,7 +11,8 @@ Usage: Copy all six node folders mentioned above and paste them into the ComfyUI
 
 ![IntervalCounter A node](image/IntervalCounterA.png)
 
-此节点拥有一个内置计数器，可根据trigger_interval（触发间隔）的输入值来完成在特定触发间隔后才进行常规计数器的递增（increment）、递减（decrement）、递增至最大值（inc_to_max）、递减至最小值（dec_to_min）特定的步数（step）
+此节点拥有一个内置计数器，可根据trigger_interval（触发间隔）的输入值来完成在特定触发间隔后才进行常规计数器的递增（increment）、递减（decrement）、递增至最大值（inc_to_max）、递减至最小值（dec_to_min）特定的步数（step）。
+
 各项参数详解：
 
 reset：重置功能，启用后节点内置计数器值将归零，可外接布尔值来调控
@@ -28,10 +29,29 @@ trigger_interval（触发间隔）：由内置计数器先进行计算的触发�
 
 tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此节点目前并没有设定保持脏状态的功能，所以要通过此端口再外接一个其他的诸如wasnodesuite包的计数节点之类哈希值保持变动的节点来保持节点的哈希值持续更新，从而不会被ComfyUI忽略掉，此端口输入的计数值并不会纳入实际运算中，仅仅是为获取一个持续变动的哈希值而已）
 
-2：image_counter node
+2：image_counter node（一般与Load prompt from TXT节点配套使用）
 
 ![Interval Image Counter node](image/IntervalImageCounter.png)
 
+与IntervalCounter A node相似，此节点拥有一个内置计数器，可根据trigger_interval（触发间隔）的输入值来完成在特定触发间隔后才进行常规计数器的递增（increment）特定的数值。但与IntervalCounter A不同的是，此节点内置计数器的触发条件改为当外面接入的图像经过该节点才会触发。
+
+各项参数详解：
+输入端 input side
+
+image：输入的目标图片（一般为加载图片列表或包含多张图片的特定文件夹加载节点）
+
+trigger：（触发器）（这个端口不用连，仅作为标识而已。触发功能已整合到image端口中）
+
+reset：重置布尔（可外接布尔值来控制）
+
+increment：在特定触发间隔后常规计数器递增的数值（在配套使用时，此数值应与IntervalCounter A node相同）
+
+trigger_interval：特定触发间隔（在配套使用时，此数值应与IntervalCounter A node相同）（e：当trigger_interval=3，increment=1时，其会在图片第三次经过该节点时节点的最终输出值+1）
+
+输出端 output side
+image：输入的目标图片（这里图片只是经过该节点而已，并不会对图片本身做任何改动）
+
+counter：节点常规计数器最终输出的值（一般接到Load prompt from TXT节点的counter输入端来输出该图片对应的prompt内容）
 
 3：load_prompt_txt node
 
