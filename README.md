@@ -10,6 +10,7 @@ Usage: Copy all six node folders mentioned above and paste them into the ComfyUI
 1：IntervalCounter A node
 
 ![IntervalCounter A node](image/IntervalCounterA.png)
+
 此节点拥有一个内置计数器，可根据trigger_interval（触发间隔）的输入值来完成在特定触发间隔后才进行常规计数器的递增（increment）、递减（decrement）、递增至最大值（inc_to_max）、递减至最小值（dec_to_min）特定的步数（step）
 各项参数详解：
 
