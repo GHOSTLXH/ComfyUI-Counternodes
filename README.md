@@ -53,14 +53,23 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 
 示例工作流（非重置模式） workflow example（unreset mode）
 
-![workflow example1（nodes 4 unreset mode）](image/example4.png)
+![workflow example1（nodes 5 unreset mode）](image/example4.png)
 
 示例工作流（重置模式） workflow example（reset mode）
 
-![workflow example1（nodes 4 reset mode）](image/example5.png)
+![workflow example1（nodes 5 reset mode）](image/example5.png)
 
 6：alternating_output B node（常用）
 ![Alternating Output B node](image/AlternatingOutputB.png)
+
+示例工作流（非重置模式） workflow example（unreset mode）
+
+![workflow example1（nodes 6 reset mode）](image/example6.png)
+
+示例工作流（重置模式） workflow example（reset mode）
+
+
+
 
 
 
