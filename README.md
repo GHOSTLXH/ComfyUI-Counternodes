@@ -74,11 +74,11 @@ prompt：被检索到的txt文件的所有内容。
 
 下面是节点1-3组合，从而实现在特定触发间隔后同时输出特定图片与其对应的正面prompt内容的模块示例：
 
-示例工作流（非重置模式） workflow example（unreset mode）（布尔值=false，整数值=0）
+示例工作流（非重置模式） workflow example（unreset mode）（bool=false，int=0）
 
 ![workflow example1（nodes 1-3 unreset）](image/example1.png)
 
-示例工作流（重置模式） workflow example（reset mode）（布尔值=true，整数值=1）
+示例工作流（重置模式） workflow example（reset mode）（bool=true，int=1）
 
 ![workflow example1（nodes 1-3 reset mode）](image/example3.png)
 
@@ -117,11 +117,11 @@ counter：外接计数器节点的值
 ![Alternating Output A node](image/AlternatingOutputA.png) 
 
 
-示例工作流（非重置模式） workflow example（unreset mode）
+示例工作流（非重置模式） workflow example（unreset mode）（bool=false，int=0）
 
 ![workflow example1（nodes 5 unreset mode）](image/example4.png)
 
-示例工作流（重置模式） workflow example（reset mode）
+示例工作流（重置模式） workflow example（reset mode）（bool=true，int=1）
 
 ![workflow example1（nodes 5 reset mode）](image/example5.png)
 
@@ -131,11 +131,11 @@ counter：外接计数器节点的值
 
 ![Alternating Output B node](image/AlternatingOutputB.png)
 
-示例工作流（非重置模式） workflow example（unreset mode）
+示例工作流（非重置模式） workflow example（unreset mode）（bool=false，int=0）
 
 ![workflow example1（nodes 6 unreset mode）](image/example6.png)
 
-示例工作流（重置模式） workflow example（reset mode）
+示例工作流（重置模式） workflow example（reset mode）（bool=true，int=1）
 
 ![workflow example1（nodes 6 reset mode）](image/example7.png)
 
