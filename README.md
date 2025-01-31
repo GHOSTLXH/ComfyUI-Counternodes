@@ -39,6 +39,8 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 
 4：IntervalCounter B node
 
+![IntervalCounter B node](image/IntervalCounterB.png)
+
 5：alternating_output A node
 
 6：alternating_output B node
