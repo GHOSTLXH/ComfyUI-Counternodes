@@ -49,7 +49,7 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 
 ![Alternating Output A node](image/AlternatingOutputA.png)
 
-6：alternating_output B node
+6：alternating_output B node（常用）
 ![Alternating Output B node](image/AlternatingOutputB.png)
 
 
