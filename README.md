@@ -74,11 +74,11 @@ prompt：被检索到的txt文件的所有内容。
 
 下面是节点1-3组合，从而实现在特定触发间隔后同时输出特定图片与其对应的正面prompt内容的模块示例：
 
-示例工作流（非重置模式） workflow example（unreset mode）
+示例工作流（非重置模式） workflow example（unreset mode）（布尔值=false，整数值=0）
 
 ![workflow example1（nodes 1-3 unreset）](image/example1.png)
 
-示例工作流（重置模式） workflow example（reset mode）
+示例工作流（重置模式） workflow example（reset mode）（布尔值=true，整数值=1）
 
 ![workflow example1（nodes 1-3 reset mode）](image/example3.png)
 
@@ -89,6 +89,30 @@ prompt：被检索到的txt文件的所有内容。
 ![IntervalCounter B node](image/IntervalCounterB.png)
 
 5：alternating_output A node
+
+此节点可用于在外接的计数器节点提供的轮数下按特定的顺序与间隔输出特定的图像的节点。此节点的顺序为：第一轮输出由first_output决定，后面在first_output的后n-2轮输出与first_output相反的图片，最后在first_output的后n轮输出first_output的图片，以此为一个循环，然后以此往复。（e：当n=3，first_output=input_b时，前10轮的图片输出顺序为：BAABAABAAB）
+
+输入端 input side
+
+input_a：可输入的图片A
+
+input_b:可输入的图片B
+
+n：在first_output图片输出一次后与下一次输出之间的轮数（即走完一个图片AB交替输出循环的轮数，n-1即为与first_output相反的图片在单个循环中所输出的轮数）
+
+first_output：在第一轮输出的图片（可选input_a或b）
+
+counter：外接计数器节点的值
+
+输出端 output side
+
+image：输出的图片
+
+width：输出图片对应的宽
+
+height：输出图片对应的高
+
+counter：外接计数器节点的值
 
 ![Alternating Output A node](image/AlternatingOutputA.png) 
 
@@ -102,6 +126,9 @@ prompt：被检索到的txt文件的所有内容。
 ![workflow example1（nodes 5 reset mode）](image/example5.png)
 
 6：alternating_output B node（常用）
+
+此节点与alternating_output A相似，但此节点的顺序为：第一轮输出由first_output决定，后面在first_output的后n-2轮输出与first_output相同的图片，最后在first_output的后n轮输出与first_output相反的图片，以此为一个循环，然后以此往复。（e：当n=3，first_output=input_b时，前10轮的图片输出顺序为：BBBABBBABB）
+
 ![Alternating Output B node](image/AlternatingOutputB.png)
 
 示例工作流（非重置模式） workflow example（unreset mode）
