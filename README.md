@@ -39,7 +39,11 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 
 下面是节点1-3组合，从而实现在特定触发间隔后同时输出特定图片与其对应的正面prompt内容的模块示例：
 
+示例工作流（非重置模式） workflow example（unreset mode）
+
 ![workflow example1（nodes 1-3 unreset）](image/example1.png)
+
+示例工作流（重置模式） workflow example（reset mode）
 
 ![workflow example1（nodes 1-3 reset mode）](image/example3.png)
 
