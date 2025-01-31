@@ -3,6 +3,11 @@
 
 This node group contains a series of ComfyUI nodes with built-in counters and specific output results based on the counter's output, aimed at implementing folder traversal functionality in the ComfyUI frontend. For specific examples, please refer to the sample workflow. Of course, you can also use your imagination to create other interesting things.
 
+综合运用示例工作流（Comprehensive Application Example）：https://github.com/GHOSTLXH/Automatic-workflows-for-Comfy/tree/main
+
+我的lora与其他模型：https://civitai.com/user/ghostlxh
+my loras and other models：
+
 使用方法：将上方6个节点文件夹全部复制黏贴到ComfyUI的Custom_nodes文件夹内即可使用。
 
 Usage: Copy all six node folders mentioned above and paste them into the ComfyUI Custom_nodes folder to start using them.
