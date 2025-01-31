@@ -5,7 +5,9 @@ This node group contains a series of ComfyUI nodes with built-in counters and sp
 
 综合运用示例工作流（Comprehensive Application Example）：https://github.com/GHOSTLXH/Automatic-workflows-for-Comfy/tree/main
 
-我的lora与其他模型（loras and other models）：https://civitai.com/user/ghostlxh
+我的lora与其他模型（大爷有空过来玩啊QAQ求求你了求求你了><）：https://civitai.com/user/ghostlxh
+
+（loras and other models）（Come and have a visit please QAQ）
 
 使用方法：将上方6个节点文件夹全部复制黏贴到ComfyUI的Custom_nodes文件夹内即可使用。
 
