@@ -30,6 +30,9 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 
 2：image_counter node
 
+![Interval Image Counter node](image/IntervalImageCounter.png)
+
+
 3：load_prompt_txt node
 
 4：IntervalCounter B node
