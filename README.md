@@ -35,6 +35,8 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 
 3：load_prompt_txt node
 
+![Load Prompt from TXT node](image/LoadPromptfromTXT.png)
+
 4：IntervalCounter B node
 
 5：alternating_output A node
