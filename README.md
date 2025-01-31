@@ -49,13 +49,28 @@ increment：在特定触发间隔后常规计数器递增的数值（在配套�
 trigger_interval：特定触发间隔（在配套使用时，此数值应与IntervalCounter A node相同）（e：当trigger_interval=3，increment=1时，其会在图片第三次经过该节点时节点的最终输出值+1）
 
 输出端 output side
+
 image：输入的目标图片（这里图片只是经过该节点而已，并不会对图片本身做任何改动）
 
-counter：节点常规计数器最终输出的值（一般接到Load prompt from TXT节点的counter输入端来输出该图片对应的prompt内容）
+counter：节点常规计数器最终输出的值（一般接到Load prompt from TXT节点的index与trigger输入端来输出该图片对应的prompt内容）
 
-3：load_prompt_txt node
+3：load_prompt_txt node（一般与image_counter node节点配套使用）
 
 ![Load Prompt from TXT node](image/LoadPromptfromTXT.png)
+
+此节点用于外接特定的计数节点传输来的计数值索引来加载该索引值对应的特定文件夹内的txt文件内容。
+
+输入端 input side
+
+index（索引）：外接特定计数器节点传来的索引值
+
+trigger（触发器）：外接特定计数器节点传来的索引值用于触发节点
+
+directory（路径）：包含一系列txt文件的文件夹的绝对路径（注：目前该节点仅支持Windows系统的路径检索，若要兼容Linux系统路径加载的话请自己动手丰衣足食）
+
+输出端 output side
+
+prompt：被检索到的txt文件的所有内容。
 
 下面是节点1-3组合，从而实现在特定触发间隔后同时输出特定图片与其对应的正面prompt内容的模块示例：
 
@@ -69,11 +84,14 @@ counter：节点常规计数器最终输出的值（一般接到Load prompt from
 
 4：IntervalCounter B node
 
+此节点与IntervalCounter A node相似，但在此基础上添加了一个对内部计数器节点计数值通过python表达式进行更改的模式（expression）输入框，你可以在expression输入或外接特定的Python数学表达式来对该节点的内部计数器计算值（value）进行特定的更改。（注：目前expression并未对其输入值做任何其他限定，如果在工作流运行中被输入恶意代码也会照常执行，所以请在启用expression前确保其输入端不会被输入任何不是你希望输入的东西）
+
 ![IntervalCounter B node](image/IntervalCounterB.png)
 
 5：alternating_output A node
 
 ![Alternating Output A node](image/AlternatingOutputA.png) 
+
 
 示例工作流（非重置模式） workflow example（unreset mode）
 
