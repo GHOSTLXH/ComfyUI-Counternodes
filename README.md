@@ -5,7 +5,7 @@ This node group contains a series of ComfyUI nodes with built-in counters and sp
 使用方法：将上方6个节点文件夹全部复制黏贴到ComfyUI的Custom_nodes文件夹内即可使用。
 Usage: Copy all six node folders mentioned above and paste them into the ComfyUI Custom_nodes folder to start using them.
 
-节点功能与示意工作流：
+节点功能与示意工作流：（nodes function and workflow examples）
 
 1：IntervalCounter A node
 
@@ -55,6 +55,9 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 
 ![workflow example1（nodes 4 unreset mode）](image/example4.png)
 
+示例工作流（重置模式） workflow example（reset mode）
+
+![workflow example1（nodes 4 reset mode）](image/example5.png)
 
 6：alternating_output B node（常用）
 ![Alternating Output B node](image/AlternatingOutputB.png)
