@@ -41,7 +41,7 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 
 ![workflow example1（nodes 1-3 unreset）](image/example1.png)
 
-![workflow example1（nodes 1-3 reset mode）](image/example2.png)
+![workflow example1（nodes 1-3 reset mode）](image/example3.png)
 
 4：IntervalCounter B node
 
