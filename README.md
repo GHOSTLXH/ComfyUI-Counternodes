@@ -37,6 +37,10 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 
 ![Load Prompt from TXT node](image/LoadPromptfromTXT.png)
 
+下面是节点1-3组合，从而实现在特定触发间隔后同时输出特定图片与其对应的正面prompt内容的模块示例：
+
+
+
 4：IntervalCounter B node
 
 ![IntervalCounter B node](image/IntervalCounterB.png)
@@ -46,5 +50,7 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 ![Alternating Output A node](image/AlternatingOutputA.png)
 
 6：alternating_output B node
+![Alternating Output B node](image/AlternatingOutputB.png)
+
 
 
