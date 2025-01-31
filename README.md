@@ -12,8 +12,9 @@ Usage: Copy all six node folders mentioned above and paste them into the ComfyUI
 ![IntervalCounter A node](image/IntervalCounterA.png)
 
 此节点拥有一个内置计数器，可根据trigger_interval（触发间隔）的输入值来完成在特定触发间隔后才进行常规计数器的递增（increment）、递减（decrement）、递增至最大值（inc_to_max）、递减至最小值（dec_to_min）特定的步数（step）。
+This node has a built-in counter that can increment, decrement, increment to the maximum value, or decrement to the minimum value by a specific step count, but only after a certain trigger interval input has been reached.
 
-各项参数详解：
+各项参数详解：（nodes function）
 
 reset：重置功能，启用后节点内置计数器值将归零，可外接布尔值来调控
 
@@ -35,7 +36,8 @@ tick（用来外接诸如wasnodesuite包的计数节点的端口）：由于此�
 
 与IntervalCounter A node相似，此节点拥有一个内置计数器，可根据trigger_interval（触发间隔）的输入值来完成在特定触发间隔后才进行常规计数器的递增（increment）特定的数值。但与IntervalCounter A不同的是，此节点内置计数器的触发条件改为当外面接入的图像经过该节点才会触发。
 
-各项参数详解：
+各项参数详解：（nodes function）
+
 输入端 input side
 
 image：输入的目标图片（一般为加载图片列表或包含多张图片的特定文件夹加载节点）
@@ -59,6 +61,8 @@ counter：节点常规计数器最终输出的值（一般接到Load prompt from
 ![Load Prompt from TXT node](image/LoadPromptfromTXT.png)
 
 此节点用于外接特定的计数节点传输来的计数值索引来加载该索引值对应的特定文件夹内的txt文件内容。
+
+各项参数详解：（nodes function）
 
 输入端 input side
 
@@ -91,6 +95,8 @@ prompt：被检索到的txt文件的所有内容。
 5：alternating_output A node
 
 此节点可用于在外接的计数器节点提供的轮数下按特定的顺序与间隔输出特定的图像的节点。此节点的顺序为：第一轮输出由first_output决定，后面在first_output的后n-2轮输出与first_output相反的图片，最后在first_output的后n轮输出first_output的图片，以此为一个循环，然后以此往复。（e：当n=3，first_output=input_b时，前10轮的图片输出顺序为：BAABAABAAB）
+
+各项参数详解：（nodes function）
 
 输入端 input side
 
