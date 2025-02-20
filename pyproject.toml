@@ -1,7 +1,7 @@
 [project]
 name = "counternodes"
-description = "Modified some functions to enhance the security of the node."
-version = "1.0.1"
+description = "The node mapping file has been readjusted to achieve a "download and use" functionality, thereby reducing the number of operational steps."
+version = "1.1.0"
 license = {file = "LICENSE"}
 
 [project.urls]
