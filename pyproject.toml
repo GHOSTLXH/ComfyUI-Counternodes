@@ -1,6 +1,6 @@
 [project]
 name = "counternodes"
-description = ""
+description = "Modified some functions to enhance the security of the node."
 version = "1.0.1"
 license = {file = "LICENSE"}
 
