@@ -16,7 +16,7 @@ Usage: Copy all six node folders mentioned above and paste them into the ComfyUI
 
 节点功能与示意工作流：（nodes function and workflow examples）
 
-1：IntervalCounter A node
+1：IntervalCounter A node（interval_counter.py）
 
 ![IntervalCounter A node](image/IntervalCounterA.png)
 
