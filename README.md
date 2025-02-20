@@ -145,7 +145,7 @@ This node is similar to the IntervalCounter A node, but on this basis, it adds a
 
 ![IntervalCounter B node](image/IntervalCounterB.png)
 
-5：alternating_output A node
+5：alternating_output A node（alternating_output.py）
 
 此节点可用于在外接的计数器节点提供的轮数下按特定的顺序与间隔输出特定的图像的节点。此节点的顺序为：第一轮输出由first_output决定，后面在first_output的后n-2轮输出与first_output相反的图片，最后在first_output的后n轮输出first_output的图片，以此为一个循环，然后以此往复。（e：当n=3，first_output=input_b时，前10轮的图片输出顺序为：BAABAABAAB）（注：此节点第一轮不参与循环，循环在第二轮才开始）
 
