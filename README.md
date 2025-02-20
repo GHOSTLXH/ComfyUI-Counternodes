@@ -11,6 +11,7 @@ This node group contains a series of ComfyUI nodes with built-in counters and sp
 （loras and other models）（Come and have a visit please QAQ）
 
 使用方法：通过git clone https://github.com/GHOSTLXH/ComfyUI-Counternodes.git 命令或者下载zip文件并放置到ComfyUI的custom_nodes文件夹内即可使用。 
+
 Usage method: You can use the command git clone https://github.com/GHOSTLXH/ComfyUI-Counternodes.git or download the zip file and place it in the custom_nodes folder of ComfyUI to start using it. 
 
 Usage: Copy all six node folders mentioned above and paste them into the ComfyUI Custom_nodes folder to start using them.
